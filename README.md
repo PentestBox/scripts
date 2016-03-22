@@ -27,9 +27,13 @@ Order is not neccessary. Value to these parameters should be on different lines.
 Let us consider an example of [/modules/passwordAttacks/oclHashcat-amd-2.01](https://github.com/PentestBox/scripts/blob/master/modules/passwordAttacks/oclhashcat-amd-2.01)
 
 DESCRIPTION="Worlds fastest password cracker and only GPGPU based rule engine. FOR AMD"
+
 INSTALLATION_CATEGORY="/passwordAttacks"
+
 COMMANDS="wget --no-check-certificate https://hashcat.net/files/oclHashcat-2.01.7z,7za x oclHashcat-2.01.7z,rm oclHashcat-2.01.7z"
+
 PATH_FOR_ALIAS="%pentestbox_ROOT%/bin/tools/oclHashcat-2.01/oclHashcat64.exe" $*
+
 TERMINAL_ALIAS=oclhashcat64
 
 COMMANDS should all commands needs to be passed to terminal.
@@ -38,4 +42,4 @@ TERMINAL_ALIAS should contain actual alias need to be set.
 
 You can create a pull request with your module after testing that on PentestBox.
 
-
+Module Structure inspired from [ptf](https://github.com/trustedsec/ptf).
