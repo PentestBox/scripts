@@ -45,8 +45,6 @@ def clink_updater():
             os.system("git pull origin master")
 def welcome():
     print cyan("Welcome to PentestBox tools update Utility.")
-    print ("Choose from the numbers given below to update corresponding category.")
-    print ("Type ")+green("exit ")+("to exit.")
     table_data=[["Commands"," "],["update all","Updates Everything in PentestBox"],["update android","Updates Android Security Tools"],
                 ["update exploitation","Updates Exploitation Tools"],["update forensics","Updates Forensics Tools"],
                 ["update informationgathering","Updates InformationGathering Tools"],["update passwordattacks","Updates Password Attacks Tools"],
