@@ -3,6 +3,7 @@ import os
 import sys
 from colors import *
 import time
+from terminaltables import AsciiTable
 #Getting location of PentestBox
 pentestbox_ROOT_DIRECTORY=os.environ['pentestbox_ROOT']
 bin_location=pentestbox_ROOT_DIRECTORY+"/bin"
@@ -42,23 +43,20 @@ def clink_updater():
         if is_git_directory():
             print cyan("Updating: ")+yellow(f)
             os.system("git pull origin master")
-def main():
+def welcome():
     print cyan("Welcome to PentestBox tools update Utility.")
     print ("Choose from the numbers given below to update corresponding category.")
     print ("Type ")+green("exit ")+("to exit.")
-    print("     0. Update Everything in PentestBox")
-    print("     1. Android")
-    print("     2. Exploitation Tools")
-    print("     3. Forensics")
-    print("     4. Information Gathering")
-    print("     5. Password Attacks")
-    print("     6. Reverse Engineering")
-    print("     7. Sniffing")
-    print("     8. Stress Testing")
-    print("     9. Web Applications")
-    print("     10. PentestBox Config Files")
-    choice = raw_input("Enter your choice: ")
-    if choice=="0" or sys.argv[1]=="all":
+    table_data=[["Commands"," "],["update all","Updates Everything in PentestBox"],["update android","Updates Android Security Tools"],
+                ["update exploitation","Updates Exploitation Tools"],["update forensics","Updates Forensics Tools"],
+                ["update informationgathering","Updates InformationGathering Tools"],["update passwordattacks","Updates Password Attacks Tools"],
+                ["update reverseengineering","Updates Reverse Engineering Tools"],["update sniffing","Updates Sniffing Tools"],
+                ["update stresstesting","Updates Stress Testing Tools"],["update webapplication","Updates WebApplication Tools"],
+                ["update config","Updates PentestBox Config Files"]]
+    table=AsciiTable(table_data)
+    print table.table
+def main():
+    if sys.argv[1]=="all":
         tools_updater("")
         tools_updater("/androidsecurity")
         tools_updater("/ExploitationTools")
@@ -71,64 +69,45 @@ def main():
         tools_updater("/WebApplications")
         config_updater()
         clink_updater()
-    elif choice=="1" or sys.argv[1]=="androidsecurity":
+    elif sys.argv[1]=="android":
         os.system("clear")
         tools_updater("/androidsecurity")
-        os.system("clear")
-        main()
-    elif choice=="2" or sys.argv[1]=="exploitationtools":
+    elif sys.argv[1]=="exploitation":
         os.system("clear")
         tools_updater("/ExploitationTools")
-        os.system("clear")
-        main()
-    elif choice=="3"or sys.argv[1]=="forensic":
+    elif sys.argv[1]=="forensic":
         os.system("clear")
         tools_updater("/ForensicTools")
-        os.system("clear")
-        main()
-    elif choice=="4" or sys.argv[1]=="informationgathering":
+    elif sys.argv[1]=="informationgathering":
         os.system("clear")
         tools_updater("/InformationGathering")
         os.chdir(bin_location+"/nmap")
         os.system("git pull origin master")
         print cyan("Updating: ")+yellow("Nmap")
-        os.system("clear")
-        main()
-    elif choice=="5" or sys.argv[1]=="passwordattacks":
+    elif sys.argv[1]=="passwordattacks":
         os.system("clear")
         tools_updater("/password_attacks")
-        os.system("clear")
-        main()
-    elif choice=="6" or sys.argv[1]=="revereengineering":
+    elif sys.argv[1]=="revereengineering":
         os.system("clear")
         tools_updater("/ReverseEngineering")
-        os.system("clear")
-        main()
-    elif choice=="7" or sys.argv[1]=="sniffing":
+    elif sys.argv[1]=="sniffing":
         os.system("clear")
         tools_updater("/Sniffing")
         os.chdir(bin_location+"/Wireshark")
         os.system("git pull origin master")
         print cyan("Updating: ")+yellow("Nmap")
-        os.system("clear")
-        main()
-    elif choice=="8" or sys.argv[1]=="stresstesting":
+    elif sys.argv[1]=="stresstesting":
         os.system("clear")
         tools_updater("/StressTesting")
-        os.system("clear")
-        main()
-    elif choice=="9" or sys.argv[1]=="webapplications":
+    elif sys.argv[1]=="webapplication":
         os.system("clear")
         tools_updater("/WebApplications")
-        os.system("clear")
-    elif choice=="10" or sys.argv[1]=="config":
+    elif sys.argv[1]=="config":
         config_updater()
-
-    elif choice=="exit":
-        os.system("clear")
-        sys.exit
+def main2():
+    if len(sys.argv) > 1:
+        main()
     else:
-        print("\n")
-        print "         Invalid Option!"
+        welcome()
 updating_scripts()
-main()
+main2()
