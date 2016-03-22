@@ -57,8 +57,8 @@ def main():
     print("     8. Stress Testing")
     print("     9. Web Applications")
     print("     10. PentestBox Config Files")
-    choice = raw_input("Enter Your Choice: ")
-    if choice=="0":
+    choice = raw_input("Enter your choice: ")
+    if choice=="0" or sys.argv[1]=="all":
         tools_updater("")
         tools_updater("/androidsecurity")
         tools_updater("/ExploitationTools")
@@ -71,22 +71,22 @@ def main():
         tools_updater("/WebApplications")
         config_updater()
         clink_updater()
-    elif choice=="1":
+    elif choice=="1" or sys.argv[1]=="androidsecurity":
         os.system("clear")
         tools_updater("/androidsecurity")
         os.system("clear")
         main()
-    elif choice=="2":
+    elif choice=="2" or sys.argv[1]=="exploitationtools":
         os.system("clear")
         tools_updater("/ExploitationTools")
         os.system("clear")
         main()
-    elif choice=="3":
+    elif choice=="3"or sys.argv[1]=="forensic":
         os.system("clear")
         tools_updater("/ForensicTools")
         os.system("clear")
         main()
-    elif choice=="4":
+    elif choice=="4" or sys.argv[1]=="informationgathering":
         os.system("clear")
         tools_updater("/InformationGathering")
         os.chdir(bin_location+"/nmap")
@@ -94,17 +94,17 @@ def main():
         print cyan("Updating: ")+yellow("Nmap")
         os.system("clear")
         main()
-    elif choice=="5":
+    elif choice=="5" or sys.argv[1]=="passwordattacks":
         os.system("clear")
         tools_updater("/password_attacks")
         os.system("clear")
         main()
-    elif choice=="6":
+    elif choice=="6" or sys.argv[1]=="revereengineering":
         os.system("clear")
         tools_updater("/ReverseEngineering")
         os.system("clear")
         main()
-    elif choice=="7":
+    elif choice=="7" or sys.argv[1]=="sniffing":
         os.system("clear")
         tools_updater("/Sniffing")
         os.chdir(bin_location+"/Wireshark")
@@ -112,17 +112,16 @@ def main():
         print cyan("Updating: ")+yellow("Nmap")
         os.system("clear")
         main()
-    elif choice=="8":
+    elif choice=="8" or sys.argv[1]=="stresstesting":
         os.system("clear")
         tools_updater("/StressTesting")
         os.system("clear")
         main()
-    elif choice=="9":
+    elif choice=="9" or sys.argv[1]=="webapplications":
         os.system("clear")
         tools_updater("/WebApplications")
         os.system("clear")
-        main()
-    elif choice=="10":
+    elif choice=="10" or sys.argv[1]=="config":
         config_updater()
 
     elif choice=="exit":
