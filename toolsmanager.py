@@ -271,5 +271,5 @@ def file_parser(filename, term):
                 return line
     if not os.path.isfile(filename):
         return None
-updating_script()
+updating_scripts()
 welcome()
