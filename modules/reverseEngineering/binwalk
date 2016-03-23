@@ -1,0 +1,5 @@
+DESCRIPTION="Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images."
+INSTALLATION_DIRECTORY="/reverseEngineering"
+COMMANDS="git clone https://github.com/devttys0/binwalk.git, cd binwalk, python setup.py install"
+TERMINAL_ALIAS=binwalk
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\base\python\Scripts\binwalk" $*
