@@ -1,5 +1,5 @@
 This Repository contains three utility:
-* ToolsManager - Using this a user can install/update/uninstall tools which are not present in PentestBox by default. 
+* ToolsManager - Using this a user can install/update/uninstall tools which are not present in PentestBox by default.
 * Update - This is a new version of update utility. Basically can update all tools category wise or all at one time. Also this is responsible for updating config files.
 * list - This list out alias of tools installed in PentestBox.
 
@@ -8,12 +8,12 @@ Modules folder contains modules through which tools can be installed which are n
 Every module need to have five inputs
 
 * DESCRIPTION
-* INSTALLATION_DIRECTORY
+* INSTALLATION_CATEGORY
 * COMMANDS
 * PATH_FOR_ALIAS
 * TERMINAL_ALIAS
 
-Order is not neccessary. Value to these parameters should be on different lines.
+Order is not necessary. Value to these parameters should be on different lines.
 
 * DESCRIPTION should contain description of the tool. You can also include website link in the value.
 * INSTALLATION_DIRECTORY should contain category name. In case for **webApplications** it should be **/webApplications**.
