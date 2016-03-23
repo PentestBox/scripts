@@ -1,0 +1,5 @@
+DESCRIPTION="Evil Foca is a tool for security pentesters and auditors whose purpose it is to test security in IPv4 and IPv6 data networks. "
+INSTALLATION_CATEGORY="/sniffing"
+COMMANDS="unzip https://github.com/ElevenPaths/EvilFOCA/releases/download/0.1.4.0/EvilFoca.zip, unzip EvilFoca.zip -d evilfoca"
+TERMINAL_ALIAS=evilfoca
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\sniffing\evilfoca\Evil Foca.exe" $*
