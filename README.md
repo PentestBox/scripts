@@ -1,6 +1,7 @@
-This Repository contains two utility:
+This Repository contains three utility:
 * ToolsManager - Using this a user can install/update/uninstall tools which are not present in PentestBox by default. 
 * Update - This is a new version of update utility. Basically can update all tools category wise or all at one time. Also this is responsible for updating config files.
+* list - This list out alias of tools installed in PentestBox.
 
 Modules folder contains modules through which tools can be installed which are not present in PentestBox by default.
 
