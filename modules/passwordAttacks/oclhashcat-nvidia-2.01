@@ -1,4 +1,4 @@
-DESCRIPTION="Worlds fastest password cracker and only GPGPU based rule engine. FOR AMD"
+DESCRIPTION="Worlds fastest password cracker and only GPGPU based rule engine. FOR Nvidia"
 INSTALLATION_CATEGORY="/passwordAttacks"
 COMMANDS="wget --no-check-certificate https://hashcat.net/files/cudaHashcat-2.01.7z,7za x cudaHashcat-2.01.7z,rm oclHashcat-2.01.7z"
 PATH_FOR_ALIAS="%pentestbox_ROOT%/bin/tools/cudaHashcat-2.01/cudaHashcat64.exe" $*
