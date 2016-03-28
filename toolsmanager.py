@@ -225,8 +225,12 @@ def install_module(filename):
         original_command = command
         command = command.split(",")
         for commands in command:
-                os.system("pwd")
-                os.system(commands)
+        	if "cd" in commands:
+			commands=commands.replace("cd ","")
+			os.chdir(commands)
+		else:
+               		os.system("pwd")
+	            	os.system(commands)
     else:
         os.system(command)
 #This function remove module, first removing folder then removing alias.
