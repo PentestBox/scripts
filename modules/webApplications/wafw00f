@@ -1,0 +1,5 @@
+DESCRIPTION="wafw00f identifies and fingerprints Web Application Firewall (WAF) products."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/sandrogauci/wafw00f.git,cd wafw00f,python setup.py install"
+TERMINAL_ALIAS=wafw00f
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\base\python\Scripts\wafw00f" $*
