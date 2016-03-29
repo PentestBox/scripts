@@ -1,0 +1,5 @@
+DESCRIPTION="multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS='git clone https://github.com/fwaeytens/dnsenum.git,perl -MCPAN -e "install Net::IP",perl -MCPAN -e "install Net::Netmask",perl -MCPAN -e "install XML::Writer"'
+TERMINAL_ALIAS=dnsenum
+PATH_FOR_ALIAS=portableshell "%pentestbox_ROOT%\bin\customtools\informationGathering\dnsenum\dnsenum.pl"
