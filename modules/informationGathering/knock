@@ -1,0 +1,5 @@
+DESCRIPTION="Knockpy is a python tool designed to enumerate subdomains on a target domain through a wordlist."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="python -m pip uninstall knockpy,git clone https://github.com/guelfoweb/knock.git,cd knock,python setup.py install"
+TERMINAL_ALIAS=knockpy
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\knock\knockpy\knockpy.py" $*
