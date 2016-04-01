@@ -1,5 +1,5 @@
 DESCRIPTION="NoSQLMap is an open source Python tool designed to audit for as well as automate injection attacks and exploit default configuration weaknesses in NoSQL databases as well as web applications using NoSQL in order to disclose data from the database."
-INSTALLATION_DIRECTORY="/webApplications"
+INSTALLATION_CATEGORY="/webApplications"
 COMMANDS="git clone https://github.com/tcstool/NoSQLMap.git,cd NoSQLMap,python setup.py install"
 TERMINAL_ALIAS=nosqlmap
 PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplications\NoSQLMap\nosqlmap.py" $*
