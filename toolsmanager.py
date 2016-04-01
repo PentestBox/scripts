@@ -158,7 +158,7 @@ def parse_tools(categoryPath):
             for path, subdirs, files in os.walk(modules_path):
                 for name in files:
                     filename = os.path.join(path, name)
-                    if name == value[8:]:
+                    if name.lower() == value[8:] or name.lower() == value[8:]:
                         install_module(filename)
                         add_alias(filename)
                         print yellow(name) + (" Successfully Installed")
@@ -169,7 +169,7 @@ def parse_tools(categoryPath):
             for path, subdirs, files in os.walk(modules_path):
                 for name in files:
                     filename = os.path.join(path, name)
-                    if name == value[7:]:
+                    if name.lower() == value[7:] or name == value[7:]:
                         update_module(filename,name)
                         os.system("clear")
                         welcome()
@@ -177,7 +177,7 @@ def parse_tools(categoryPath):
         for path, subdirs, files in os.walk(modules_path):
             for name in files:
                 filename = os.path.join(path, name)
-                if name == value[10:]:
+                if name.lower() == value[10:] or name == value[10:]:
                     remove_module(filename,name)
                     Print ("Succesfully removed: ")+yellow(name)
                     welcome()
