@@ -1,0 +1,5 @@
+DESCRIPTION="BSQLinjector uses blind method to retrieve data from SQL databases."
+INSTALLATION_CATEFORY="/webApplications"
+COMMANDS="git clone https://github.com/enjoiz/BSQLinjector.git"
+TERMINAL_ALIAS=bsqlinjector
+PATH_FOR_ALIAS=ruby "%pentestbox_ROOT%\bin\customtools\webApplications\BSQLinjector\BSQLinjector.rb" $*
