@@ -1,0 +1,5 @@
+DESCRIPTION="A security scanner for HTTP response headers."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/riramar/hsecscan.git"
+TERMINAL_ALIAS=hsecscan
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplications\hsecscan\hsecscan.py" $*
