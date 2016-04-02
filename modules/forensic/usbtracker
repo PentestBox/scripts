@@ -2,4 +2,4 @@ DESCRIPTION="USBTracker is a quick & dirty coded incident response and forensics
 INSTALLATION_CATEGORY="/forensic"
 COMMANDS="git clone https://github.com/sysinsider/usbtracker.git"
 TERMINAL_ALIAS=usbtracker
-PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\forensic\usbtracker\usbtracker.exe" $*
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\forensic\usbtracker\usbtracker.exe" $*
