@@ -1,0 +1,5 @@
+DESCRIPTION=" dnstwist takes in your domain name as a seed, generates a list of potential phishing domains and then checks to see if they are registered."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/elceef/dnstwist.git"
+TERMINAL_ALIAS=dnstwist
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\dnstwist\dnstwist.py" $*
