@@ -1,0 +1,5 @@
+DESCRIPTION="Tool for automatic exploitation of XXE vulnerability using direct and different out of band methods."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/enjoiz/XXEinjector.git xxeinjector"
+TERMINAL_ALIAS=xxeinjector
+PATH_FOR_ALIAS=ruby "%pentestbox_ROOT%\bin\customtools\webApplications\xxeinjector\XXEinjector.rb" $*
