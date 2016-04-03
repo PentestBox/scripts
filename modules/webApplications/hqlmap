@@ -1,0 +1,5 @@
+DESCRIPTION="HQLmap, Automatic tool to exploit HQL injections."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/PaulSec/HQLmap.git hqlmap"
+TERMINAL_ALIAS=hqlmap
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplications\hqlmap\HQLmap.py" $*
