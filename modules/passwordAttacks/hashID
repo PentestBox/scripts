@@ -1,0 +1,5 @@
+DESCRIPTION="Identify the different types of hashes used to encrypt data and especially passwords."
+INSTALLATION_CATEGORY="/passwordAttacks"
+COMMANDS="git clone https://github.com/psypanda/hashID.git"
+TERMINAL_ALIAS=hashid
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\passwordAttacks\hashID\hashid.py" $*
