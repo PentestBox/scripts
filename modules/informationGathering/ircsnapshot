@@ -1,0 +1,5 @@
+DESCRIPTION="Tool to gather information from IRC servers."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/bwall/ircsnapshot.git"
+TERMINAL_ALIAS=ircsnapshot
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\ircsnapshot\ircsnapshot\ircsnapshot.py" $*
