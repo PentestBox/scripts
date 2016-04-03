@@ -1,0 +1,5 @@
+DESCRIPTION="A command to search port names and numbers."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="python -m pip install whatportis"
+TERMINAL_ALIAS=whatportis
+PATH_FOR_ALIAS=
