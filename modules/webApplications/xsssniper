@@ -1,0 +1,5 @@
+DESCRIPTION=""
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/gbrindisi/xsssniper.git"
+TERMINAL_ALIAS=xsssniper
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplication\xsssniper\xsssniper.py" $*
