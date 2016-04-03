@@ -1,0 +1,5 @@
+DESCRIPTION="An automated XSS payload generator written in python."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/mandatoryprogrammer/xssless.git"
+TERMINAL_ALIAS=xssless
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplications\xssless\xssless.py" $*
