@@ -1,4 +1,4 @@
-DESCRIPTION=""
+DESCRIPTION="xsssniper is an handy xss discovery tool with mass scanning functionalities."
 INSTALLATION_CATEGORY="/webApplications"
 COMMANDS="git clone https://github.com/gbrindisi/xsssniper.git"
 TERMINAL_ALIAS=xsssniper
