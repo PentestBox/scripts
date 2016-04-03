@@ -1,0 +1,5 @@
+DESCRIPTION="A black box, Ruby powered, Joomla vulnerability scanner"
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/rastating/joomlavs.git,cd joomlavs,bundle install"
+TERMINAL_ALIAS=joomlavs
+PATH_FOR_ALIAS=ruby "%pentestbox_ROOT%\bin\customtools\webApplications\joomlavs\joomlavs.rb" $*
