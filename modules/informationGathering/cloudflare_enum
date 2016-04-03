@@ -1,0 +1,5 @@
+DESCRIPTION="A simple tool to allow easy querying of Cloudflare's DNS data written in Python."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/mandatoryprogrammer/cloudflare_enum.git"
+TERMINAL_ALIAS=cloudflare_enum
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\cloudflare_enum\cloudflare_enum.py" $*
