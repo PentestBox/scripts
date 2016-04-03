@@ -1,0 +1,5 @@
+DESCRIPTION="Cansina is a Web Content Discovery Application."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/deibit/cansina.git"
+TERMINAL_ALAIS=cansina
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplications\cansina\cansina.py" $*
