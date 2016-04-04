@@ -1,0 +1,5 @@
+DESCRIPTION="A simple utility to convert EXE files to JPEG images and vice versa."
+INSTALLATION_CATEGORY="/forensic"
+COMMANDS="mkdir Exe2Image,curl -O -L https://github.com/OsandaMalith/Exe2Image/releases/download/1/Exe2Image.7z,7za x Exe2Image.7z"
+TERMINAL_ALIAS=exe2image
+PATH_FOR_ALIAS=java -jar "%pentestbox_ROOT%\bin\customtools\forensic\Exe2Image\Exe2Image.jar" $*
