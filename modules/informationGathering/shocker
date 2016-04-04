@@ -1,0 +1,5 @@
+DESCRIPTION="A tool to find and exploit servers vulnerable to Shellshock."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/nccgroup/shocker.git"
+TERMINAL_ALIAS=shocker
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\shocker\shocker.py" $*
