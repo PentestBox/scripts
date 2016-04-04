@@ -1,0 +1,5 @@
+DESCRIPTION="A unique automated LFi Exploiter with Bind/Reverse Shells."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/OsandaMalith/LFiFreak.git lfifreak"
+TERMINAL_ALIAS=lfifreak
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplications\lfifreak\lfi.py" $*
