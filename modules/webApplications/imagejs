@@ -1,0 +1,5 @@
+DESCRIPTION="Small tool to package javascript into a valid image file."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/PentestBox/imagejs.git"
+TERMINAL_ALIAS=imagejs
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\webApplications\imagejs\imagejs.exe" $*
