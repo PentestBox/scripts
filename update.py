@@ -25,23 +25,10 @@ def is_git_directory():
 def tools_updater(tools_category):
     folder_path=bin_location+tools_category
     for f in os.listdir(folder_path):
-        tools_folder=os.path.join(folder_path,f)
-        os.chdir(tools_folder)
-        if is_git_directory():
-            print cyan("Updating: ")+yellow(f)
-            os.system("git pull origin master")
-
-def config_updater():
-        os.chdir(config_location)
-        print cyan("Updating: ")+yellow('config')
-        os.system('git fetch --all')
-        os.system('git reset --hard origin/master')
-def clink_updater():
-    for f in os.listdir(base_location):
         if f=="metasploit-framework":
             tools_folder=os.path.join(folder_path,f)
             os.chdir(tools_folder)
-            print cyan("Updating: ")+yellow(Metasploit)
+            print cyan("Updating: ")+yellow("Metasploit")
             os.system("git fetch --all")
             os.system('git reset --hard origin/master')
             os.system("bundle install")
@@ -51,6 +38,19 @@ def clink_updater():
             if is_git_directory():
                 print cyan("Updating: ")+yellow(f)
                 os.system("git pull origin master")
+
+def config_updater():
+        os.chdir(config_location)
+        print cyan("Updating: ")+yellow('config')
+        os.system('git fetch --all')
+        os.system('git reset --hard origin/master')
+def clink_updater():
+    for f in os.listdir(base_location):
+        tools_folder=os.path.join(folder_path,f)
+        os.chdir(tools_folder)
+        if is_git_directory():
+            print cyan("Updating: ")+yellow(f)
+            os.system("git pull origin master")
 def welcome():
     print cyan("Welcome to PentestBox tools update Utility.")
     table_data=[["Commands"," "],["update all","Updates Everything in PentestBox"],["update android","Updates Android Security Tools"],
