@@ -2,4 +2,4 @@ DESCRIPTION="Cangibrina is a multi platform tool which aims to obtain the Dashbo
 INSTALLATION_CATEGORY="/informationGathering"
 COMMANDS="git clone https://github.com/fnk0c/cangibrina.git,python -m pip install bs4,python -m pip install mechanize,python -m pip install html5lib,python -m pip install PySocks"
 TERMINAL_ALIAS=cangibrina
-PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\cangibrina\cangibrina.py" $*
+PATH_FOR_ALIAS=cd /d "%pentestbox_ROOT%\bin\customtools\informationGathering\cangibrina" $T python "%pentestbox_ROOT%\bin\customtools\informationGathering\cangibrina\cangibrina.py" $*
