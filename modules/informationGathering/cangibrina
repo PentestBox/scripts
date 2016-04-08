@@ -1,0 +1,5 @@
+DESCRIPTION="Cangibrina is a multi platform tool which aims to obtain the Dashboard of sites using brute-force over wordlist, google, nmap, and robots.txt"
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/fnk0c/cangibrina.git,python -m pip install bs4,python -m pip install mechanize,python -m pip install html5lib,python -m pip install PySocks"
+TERMINAL_ALIAS=cangibrina
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\cangibrina\cangibrina.py" $*
