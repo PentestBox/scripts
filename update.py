@@ -38,11 +38,19 @@ def config_updater():
         os.system('git reset --hard origin/master')
 def clink_updater():
     for f in os.listdir(base_location):
-        tools_folder=os.path.join(base_location,f)
-        os.chdir(tools_folder)
-        if is_git_directory():
-            print cyan("Updating: ")+yellow(f)
-            os.system("git pull origin master")
+        if f=="metasploit-framework":
+            tools_folder=os.path.join(folder_path,f)
+            os.chdir(tools_folder)
+            print cyan("Updating: ")+yellow(Metasploit)
+            os.system("git fetch --all")
+            os.system('git reset --hard origin/master')
+            os.system("bundle install")
+        else:
+            tools_folder=os.path.join(folder_path,f)
+            os.chdir(tools_folder)
+            if is_git_directory():
+                print cyan("Updating: ")+yellow(f)
+                os.system("git pull origin master")
 def welcome():
     print cyan("Welcome to PentestBox tools update Utility.")
     table_data=[["Commands"," "],["update all","Updates Everything in PentestBox"],["update android","Updates Android Security Tools"],
