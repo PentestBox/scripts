@@ -2,4 +2,4 @@ DESCRIPTION="Interceptor-NG is a multifunctional network toolkit for various typ
 INSTALLATION_CATEGORY="/sniffing"
 COMMANDS="curl -O http://sniff.su/Intercepter-NG.v0910.zip,unzip Intercepter-NG.v0910.zip -d Intercepter-NG"
 TERMINAL_ALIAS=intercepter-ng
-PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\sniffing\Interceptor-NG\Intercepter-NG.exe" $*
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\sniffing\Intercepter-NG\Intercepter-NG.exe" $*
