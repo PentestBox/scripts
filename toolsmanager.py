@@ -4,7 +4,7 @@ from subprocess import call, STDOUT
 from colors import *
 import time
 from textwrap import *
-from terminaltables import AsciiTable
+from terminaltables import *
 #Getting location of PentestBox
 pentestbox_ROOT_DIRECTORY=os.environ['pentestbox_ROOT']
 #Setting location
@@ -134,17 +134,26 @@ def welcome():
 #List out all tools of a category and then present options
 def parse_tools(categoryPath):
     modules_path = scripts_location + categoryPath
+    table_data_short=[]
     for path, subdirs, files in os.walk(modules_path):
         for name in files:
             if ".md" not in name:
                 filename = os.path.join(path, name)
                 description=file_parser(filename, "DESCRIPTION")
                 long_string=(str(description))
-                table=AsciiTable([[name,'']])
-                max_width = table.column_max_width(1)
-                wrapped_string = '\n'.join(wrap(long_string, max_width))
-                table.table_data[0][1] = wrapped_string
-                print(table.table)
+                if len(long_string) > 120:
+                    table=DoubleTable([[name,'']])
+                    max_width = table.column_max_width(1)
+                    wrapped_string = '\n'.join(wrap(long_string, max_width))
+                    table.table_data[0][1] = wrapped_string
+                    print(table.table)
+                else:
+                    table_data_short.append([name,long_string])
+    table_short=DoubleTable(table_data_short)
+    table_short.inner_heading_row_border = False
+    table_short.inner_row_border = False
+    print (table_short.table)
+
     print "\n"
     print ("Install/Update/Uninstall any of the above tool.\nFor example:")+yellow("install xyz") +" will install xyz, "+yellow("update xyz")+" will update xyz and "+yellow("uninstall xyz")+" will Uninstall xyz \nEnter "+ cyan("back")+ (" for main menu and ")+green("exit")+(" to exit\n")
     value=raw_input("")
@@ -258,9 +267,7 @@ def remove_module(filename,name):
 def header():
     print ("""=================================
 
-      """) + ("""Name                                                 Description """) + ("""
-      ----                                                 ---------------
-    """)
+      """) + ("""Name                                                 Description """)
 #Check for string a file
 def file_parser(filename, term):
     if os.path.isfile(filename):
