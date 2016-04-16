@@ -1,0 +1,5 @@
+DESCRIPTION="Metagoofil is a tool for extracting metadata of public documents (pdf,doc,xls,ppt,etc) availables in the target websites."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/laramies/metagoofil.git"
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\informationGathering\metagoofil\metagoofil.py" $*
+TERMINAL_ALIAS=metagoofil
