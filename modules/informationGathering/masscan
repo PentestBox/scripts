@@ -1,0 +1,5 @@
+DESCRIPTION="This is the fastest Internet port scanner. It can scan the entire Internet in under 6 minutes, transmitting 10 million packets per second."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/PentestBox/masscan.git"
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\informationGathering\masscan\masscan.exe" $*
+TERMINAL_ALIAS=masscan
