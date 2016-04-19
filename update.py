@@ -45,6 +45,7 @@ def config_updater():
         os.system('git fetch --all')
         os.system('git reset --hard origin/master')
 def clink_updater():
+    folder_path=base_location
     for f in os.listdir(base_location):
         tools_folder=os.path.join(folder_path,f)
         os.chdir(tools_folder)
