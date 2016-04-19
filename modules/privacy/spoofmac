@@ -1,0 +1,5 @@
+DESCRIPTION="Spoof your MAC address."
+INSTALLATION_CATEGORY="/privacy"
+COMMANDS="python -m pip install SpoofMAC"
+TERMINAL_ALIAS=spoofmac
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\base\python\Scripts\spoof-mac.py" $*
