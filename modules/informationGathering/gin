@@ -1,0 +1,5 @@
+DESCRIPTION="a Git index file parser."
+INSTALLATION_CATEGORY="/informationGathering"
+COMMANDS="git clone https://github.com/PentestBox/gin.git,cd gin,git checkout python2,python setup.py install"
+TERMINAL_ALIAS=gin
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\base\python\Scripts\gin" $*
