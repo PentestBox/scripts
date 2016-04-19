@@ -1,0 +1,5 @@
+DESCRIPTION="Evilgrade is a modular framework that allows the user to take advantage of poor upgrade implementations by injecting fake updates."
+INSTALLATION_CATEGORY="/sniffing"
+COMMANDS="git clone https://github.com/infobyte/evilgrade.git,cpan -i RPC::XML"
+TERMINAL_ALIAS=evilgrade
+PATH_FOR_ALIAS=cd /d "%pentestbox_ROOT%\bin\customtools\sniffing\evilgrade" $T portableshell "%pentestbox_ROOT%\bin\customtools\sniffing\evilgrade\evilgrade" $*
