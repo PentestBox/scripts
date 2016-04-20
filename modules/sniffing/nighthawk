@@ -1,0 +1,5 @@
+DESCRIPTION="Nighthawk is an experimental implementation of ARP/ND spoofing, password sniffing and simple SSL stripping for Windows."
+INSTALLATION_CATEGORY="/sniffing"
+COMMANDS="git clone https://github.com/PentestBox/nighthawk.git"
+TERMINAL_ALIAS=nighthawk
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\sniffing\nighthawk\Nighthawk.exe" $*
