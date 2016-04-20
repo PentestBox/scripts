@@ -1,0 +1,5 @@
+DESCRIPTION="Netcat is a computer networking utility for reading from and writing to network connections using TCP or UDP."
+INSTALLATION_CATEGORY="/sniffing"
+COMMANDS="git clone https://github.com/PentestBox/netcat.git"
+TERMINAL_ALIAS=nc
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\sniffing\netcat\nc.exe" $*
