@@ -1,0 +1,5 @@
+DESCRIPTION="CeWL is a Custom Word List Generator."
+INSTALLATION_CATEGORY="/passwordAttacks"
+COMMANDS="git clone https://github.com/PentestBox/CeWL.git cewl,cd cewl,bundle install"
+PATH_FOR_ALIAS=ruby "%pentestbox_ROOT%\bin\customtools\passwordAttacks\cewl\cewl.rb" $*
+TERMINAL_ALIAS=cewl
