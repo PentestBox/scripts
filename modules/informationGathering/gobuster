@@ -1,0 +1,5 @@
+INSTALLATION_CATEGORY="/informationGathering"
+DESCRIPTION="Alternative directory and file busting tool written in Go."
+COMMANDS="git clone https://github.com/PentestBox/gobuster.git"
+TERMINAL_ALIAS=gobuster
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\informationGathering\gobuster\gobuster.exe" $*
