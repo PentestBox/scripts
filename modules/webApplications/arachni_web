@@ -1,0 +1,5 @@
+DESCRIPTION="Web Interface for Arachni"
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="curl -O -L https://github.com/PentestBox/arachni-web/releases/download/v1.4.0/arachni-web.zip, unzip arachni-web.zip"
+PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\webApplications\arachni-web\bin\arachni_web.bat" $*
+TERMINAL_ALIAS=arachni_web
