@@ -1,0 +1,5 @@
+DESCRIPTION="Arachni is a feature-full, modular, high-performance Ruby framework aimed towards helping penetration testers and administrators evaluate the security of modern web applications."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="gem install arachni"
+PATH_FOR_ALIAS="%pentestbox_ROOT%\base\ruby\bin\arachni.bat" $*
+TERMINAL_ALIAS=arachni
