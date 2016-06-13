@@ -1,0 +1,5 @@
+DESCRIPTION="A free and open source software to find the components installed in Joomla CMS."
+INSTALLATION_CATEGORY="/webApplications"
+COMMANDS="git clone https://github.com/PentestBox/joomlascan,python -m pip install beautifulsoup4"
+TERMINAL_ALIAS=joomlascan
+PATH_FOR_ALIAS=cd /d "%pentestbox_ROOT%\bin\customtools\webApplications\joomlascan" $T python "%pentestbox_ROOT%\bin\customtools\webApplications\joomlascan\joomlascan.py" $*
