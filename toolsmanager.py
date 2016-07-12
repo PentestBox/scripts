@@ -188,7 +188,7 @@ def parse_tools(categoryPath):
                 filename = os.path.join(path, name)
                 if name.lower() == value[10:] or name == value[10:]:
                     remove_module(filename,name)
-                    Print ("Succesfully removed: ")+yellow(name)
+                    print ("Succesfully removed: ")+yellow(name)
                     welcome()
 
     else:
