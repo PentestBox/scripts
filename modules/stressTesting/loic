@@ -1,5 +1,5 @@
 DESCRIPTION="Low Orbit Ion Cannon - An open source network stress tool, written in C# Based on Praetox's loic project."
 INSTALLATION_CATEGORY="/stressTesting"
-COMMANDS="curl -O -L https://github.com/NewEraCracker/LOIC/releases/download/2.0.0.0/LOIC_2.0.0.0.zip,unzip LOIC_2.0.0.0.zip -d loic"
+COMMANDS="curl -O -L https://github.com/NewEraCracker/LOIC/releases/download/2.0.0.0/LOIC_2.0.0.0.zip,unzip LOIC_2.0.0.0.zip -d loic,rm LOIC_2.0.0.0.zip"
 TERMINAL_ALIAS=loic
 PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\stressTesting\loic\loic.exe" $*
