@@ -1,5 +1,5 @@
 DESCRIPTION="Interceptor-NG is a multifunctional network toolkit for various types of IT specialists.The main purpose is to recover *interesting* data from the network stream and perform different kinds of MiTM attacks."
 INSTALLATION_CATEGORY="/sniffing"
-COMMANDS="curl -O http://sniff.su/Intercepter-NG.v0910.zip,unzip Intercepter-NG.v0910.zip -d Intercepter-NG,rm Intercepter-NG.v0910.zip"
+COMMANDS="curl -O http://sniff.su/Intercepter-NG.v1.0.zip,unzip Intercepter-NG.v1.0.zip -d Intercepter-NG,rm Intercepter-NG.v1.0.zip"
 TERMINAL_ALIAS=intercepter-ng
 PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\sniffing\Intercepter-NG\Intercepter-NG.exe" $*
