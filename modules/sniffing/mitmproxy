@@ -1,5 +1,5 @@
 DESCRIPTION="An interactive program that allows traffic flows to be intercepted, inspected, modified and replayed."
-INSTALLATION="/sniffing"
+INSTALLATION_CATEGORY="/sniffing"
 COMMANDS="curl -O -L https://github.com/mitmproxy/mitmproxy/releases/download/v1.0/mitmproxy-1.0.0-windows.zip,unzip mitmproxy-1.0.0-windows.zip -d mitmproxy,rm mitmproxy-1.0.0-windows.zip"
 TERMINAL_ALIAS=mitmweb
 PATH_FOR_ALIAS="%pentestbox_ROOT%\bin\customtools\sniffing\mitmproxy\mitmweb.exe" $*
