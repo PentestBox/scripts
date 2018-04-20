@@ -2,4 +2,4 @@ DESCRIPTION="xsssniper is an handy xss discovery tool with mass scanning functio
 INSTALLATION_CATEGORY="/webApplications"
 COMMANDS="git clone https://github.com/gbrindisi/xsssniper.git"
 TERMINAL_ALIAS=xsssniper
-PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplication\xsssniper\xsssniper.py" $*
+PATH_FOR_ALIAS=python "%pentestbox_ROOT%\bin\customtools\webApplications\xsssniper\xsssniper.py" $*
